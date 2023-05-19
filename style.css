@@ -1,0 +1,124 @@
+/* background start */
+.bg-img{
+    background-image: url("images/background.jpg");
+    height: 100vh;
+    text-align: center;
+    color:white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.body-text{
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    padding: 13% 0 0 0;
+    position: absolute;
+    color: white;
+}
+.t1{
+    font-size: 2rem;
+}
+.body-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.profile_image{
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+
+/* background end */
+.heading{
+    text-align: center;
+    padding: 50px 0;
+}
+/* about start */
+#about{
+    height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#about .about_blocks{
+    width: 100%;
+    display: flex;
+}
+.about_blocks .block1{
+    width: 50%;
+}
+.about_blocks .block2{
+    width: 50%;
+    padding: 8%;
+    font-size: 25px;
+    font-weight: 500;
+}
+/* about end */
+.head{
+    font-size: 3rem;
+    font-weight: 800;
+}
+/* service start */
+/* graphic page  start*/
+.graphic_page{
+    background-image: url(images/graphic_web_view.png);
+    height:300px;
+    background-position: center;
+    background-size: cover;
+    padding:50%;
+    position: relative;
+}
+.graphic_page a{
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    font-weight: 500;
+    padding: 10px 50px;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 300px;
+}
+.graphic_page a:hover{
+    background-color: black;
+    color:white
+}
+/* graphic page  end*/
+#service{
+
+}
+.service-icon i{
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+/* service start */
+/* project start */
+
+#project img{
+ border-top-left-radius: 5px;
+ border-top-right-radius: 5px;
+}
+/* project end */
+#client img{
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 768px) {
+    .graphic_page{
+        background-image: url(images/graphic_mobile_view.png);
+    }
+    .graphic_page a{
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        margin-top: 130px;
+        margin-left: 20px;
+}
+}
