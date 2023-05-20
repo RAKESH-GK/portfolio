@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-dark text-light">
@@ -19,14 +20,17 @@
 
     <nav class="navbar navbar-expand-md  bg-dark navbar-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Rakesh G K</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold" href="#" style="color: orangered;">Rakesh G K</a>
+        <button class="navbar-toggler" style="box-shadow: none; border: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
           <ul class="navbar-nav" >
             <li class="nav-item mx-3">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link navbar-collapse" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item mx-3">
               <a class="nav-link" href="#service">Service</a>
@@ -42,9 +46,20 @@
       </div>
     </nav>
     <!-- navbar end -->
+    <script>
+      $(document).ready(function(){
+        $(".navbar-toggler").click(function(){
+          $(".navbar-collapse").addClass("show");
+        });
+        $(".nav-link").click(function(){
+          $(".navbar-collapse").removeClass("show");
+        });
+      });
+    </script>
 
     <div class="body-text">
-      <center><div class="profile_image"></div></center>
+      <center><div class="profile_image">
+      </div></center>
       <div class="t1">I'm <span style="font-weight:800; color: orangered;">Rakesh G K</span></div>
       <h1>Let's work together</h1>
       <button type="button" class="btn btn-success mt-3">Hire Rakesh G K</button>
@@ -58,7 +73,9 @@
       <div class="head text-light">About me</div>
     </div>
     <div class="about_blocks">
-      <div class="block1"></div>
+      <div class="block1">
+        <img src="images/about_pic.jpg" alt="">
+      </div>
       <div class="block2">
         <p class="text-light" style="text-align: justify;"><b style="font-weight: 700">I am Rakesh G K</b> , Student at Dayanand sagar college of enginering Bangalore I'm a motivated individual with a positive can-do attitude and keen on learning. with a passion, creativity, teamwork, agility, accountability qualities and desire to learn new complex technical areas. </p>
       </div>
