@@ -43,6 +43,7 @@
     width: 100%;
     height: 100vh;
     background-color: black;
+    color: white;
 }
 #about .about_blocks{
     width: 100%;
@@ -74,7 +75,7 @@
 }
 .graphic_page a{
     text-decoration: none;
-    background-color: yellow;
+    background-color: orangered;
     color: black;
     font-weight: 500;
     padding: 10px 50px;
@@ -84,26 +85,33 @@
 }
 .graphic_page a:hover{
     background-color: black;
-    color:white
+    color:orangered
 }
 /* graphic page  end*/
-#service{
-
+/* service start */
+#service .row p{
+    text-align: justify;
+    padding: 10px 0px;
 }
 .service-icon i{
-    background-color: yellow;
+    background-color: orangered;
     padding: 20px;
     border-radius: 50%;
     width: 80px;
-    height: 80px;
+    height: 80px; 
 }
-/* service start */
+/* service end */
 /* project start */
 
 #project img{
  border-top-left-radius: 5px;
  border-top-right-radius: 5px;
 }
+
+#project .btn-warning{
+ background-color: orangered;
+}
+
 /* project end */
 #client img{
     width: 70%;
@@ -111,6 +119,7 @@
     border-radius: 50%;
 }
 @media only screen and (max-width: 768px) {
+    
     .graphic_page{
         background-image: url(images/graphic_mobile_view.png);
     }
@@ -120,5 +129,5 @@
         position: absolute;
         margin-top: 130px;
         margin-left: 20px;
-}
+    }
 }
